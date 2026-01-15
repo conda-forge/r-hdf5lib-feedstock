@@ -1,4 +1,4 @@
-{% set version = '2.0.0.4' %}
+{% set version = "2.0.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hdf5lib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hdf5lib/hdf5lib_{{ version }}.tar.gz
-  sha256: 5226aecadd98c7968792bae97b2b7cc99ff71210d97507238a4f1143b30be011
+  sha256: 596621e4d4e520f18ed2b3b1dd08fe7e2a3632c2e0179f99cf9758feb730f849
 
 build:
   number: 0
@@ -52,13 +52,8 @@ about:
   home: https://cmmr.github.io/hdf5lib
   dev_url: https://github.com/cmmr/hdf5lib
   license: MIT
-  summary: '''HDF5'' (Hierarchical Data Format 5) is a high-performance library and file format
-    for storing and managing large, complex data. This package provides the static libraries
-    and headers for the ''HDF5'' ''C'' library (release 2.0.0). It is intended for R
-    package developers to use in the ''LinkingTo'' field, which eliminates the need
-    for users to install system-level ''HDF5'' dependencies. This build is compiled
-    with thread-safety enabled and supports dynamic loading of external compression
-    filters. ''HDF5'' is developed by ''The HDF Group'' <https://www.hdfgroup.org/>.'
+  summary: '''HDF5'' (Hierarchical Data Format 5) is a high-performance library and file format for storing and managing large, complex data. This package provides the static libraries and headers for the ''HDF5'' ''C'' library (release 2.0.0). It is intended for R package developers to use in the ''LinkingTo'' field, which
+    eliminates the need for users to install system-level ''HDF5'' dependencies. This build is compiled with thread-safety enabled and supports dynamic loading of external compression filters. ''HDF5'' is developed by ''The HDF Group'' <https://www.hdfgroup.org/>.'
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
