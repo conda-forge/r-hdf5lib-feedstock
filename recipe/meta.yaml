@@ -1,4 +1,4 @@
-{% set version = "2.1.1.1" %}
+{% set version = "2.1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hdf5lib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hdf5lib/hdf5lib_{{ version }}.tar.gz
-  sha256: e4e367cadc7f64e14f4bf11fee77013023e0ac3002c070e0ceec9408292be9d5
+  sha256: 7df6fd07ac7a57a605fc20aa8f037ae79dee99e757a936d4fd349bde734edf22
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
